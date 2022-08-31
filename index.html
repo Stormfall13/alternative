@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="scss/style.css">
+<link rel="stylesheet" href="scss/item.css">
+<link rel="stylesheet" href="scss/popup.css">
+<link rel="stylesheet" href="scss/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>SSM Marketing</title>
+</head>
+<body>
+<header id="header">
+    <div class="logo__item">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="header__contact">
+        <a href="tel" class="link__contact">+998 (90) 000-00-00</a>
+    </div>
+</header>
+<div id="section__header">
+    <div class="item__menu">
+        <input  id="nav-toggle" class="nav-toggle" type="checkbox"/>
+        <div class="burger__item">
+            <div class="burger__icon">
+                <label class="nav-toggle-label" for="nav-toggle" >
+                    <span class="burger__line burger__line--one"></span>
+                    <span class="burger__line burger__line--two"></span>
+                    <span class="burger__line burger__line--tree"></span>
+                </label> 
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a class="main-menu__link" href="#">Услуги</a></li>
+                <li><a class="main-menu__link" href="#">Тарифы</a></li>
+                <li><a class="main-menu__link" href="#">Преимущества</a></li>
+                <li><a class="main-menu__link" href="#">Команда</a></li>
+                <li><a class="main-menu__link" href="#">Наши работы</a></li>
+                <li><a class="main-menu__link" href="#">Получить расчет</a></li>
+            </ul>
+        </nav> 
+    </div> 
+    <div class="section__title">
+        <h1 class="page__title">Реальные бизнес результаты в digital</h1>
+        <p class="text__descriptor">Привлекаем клиентов в ваш бизнес с 
+            первого дня запуска рекламной кампании.</p>
+        <a class="btn__title open_modal" href="#open">Оставить заявку</a>
+    </div>
+    <div class="section__link">
+        <a href="#" class="link__main">SMM. Marketing. PR</a>
+    </div>
+</div>
+<div id="btn__down">
+    <a href="#" class="link__down">
+        <img src="img/down.png" alt="">
+    </a>
+</div>
+<div id="fixed__social">
+    <a href="#" class="link__social">
+        <img src="img/inst.png" alt="">
+    </a>
+    <a href="#" class="link__social">
+        <img src="img/tg.png" alt="">
+    </a>
+</div>
+
+
+
+
+
+<footer style="height: 1000px;">
+    <a class="btn__title open_modal" href="#open">Оставить заявку</a>
+</footer>
+
+<div id="modal" class="modal bounceIn">
+    <div class="popup__wrapp">
+        <div id="close_modal">
+            <img src="img/close.png" alt="">
+            
+        </div>
+        <div class="bg__form">
+            <img src="img/bgf.png" alt=""> 
+            <div class="overlay"></div>
+        </div>
+        <div class="text__form">Получить расчет</div>
+        <div class="form">
+            <input type="text" placeholder="Имя" class="input" style="display: block;">
+            <input type="text" placeholder="Номер телефона" class="input" style="display: block;">
+            <textarea type="text" placeholder="Сообщение" class="input" style="display: block;"></textarea>
+            <button class="btn">Отправить</button>
+            <div class="valid" style="display: none;">Форма отправлена</div>
+        </div>  
+    </div>
+</div> 
+
+<script src="js/script.js"></script>
+</body>
+</html>
