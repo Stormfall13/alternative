@@ -41,6 +41,10 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+#header .logo__item .logo:hover img {
+  transition: 1s ease;
+  filter: drop-shadow(2px 4px 6px black);
+}
 #header .header__contact {
   background: var(--main--color);
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
@@ -201,7 +205,7 @@ body {
 }
 #section__header .section__title .btn__title {
   background: var(--main--color);
-  font-family: "Baloo 2";
+  font-family: "Baloo 2", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -269,11 +273,421 @@ body {
   max-width: 90px;
   position: fixed;
   padding: 11px 0px;
+  z-index: 3;
 }
 #fixed__social .link__social {
   margin: 20px;
 }
 
+#section__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 1080px;
+  padding: 76px 0 30px 0;
+}
+#section__social .social__wrapp {
+  display: flex;
+  justify-content: center;
+  background: #9D2AE4;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  max-width: 605px;
+  min-height: 430px;
+  width: 100%;
+  margin: 17px;
+}
+#section__social .social__wrapp .wrapper__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 444px;
+  width: 100%;
+  padding: 0 20px;
+}
+#section__social .social__wrapp .title__social {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  color: #FFFFE0;
+  line-height: 50px;
+  margin: 0;
+}
+#section__social .social__wrapp .text__social {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFE0;
+}
+#section__social .social__wrapp .open_modal {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4B0082;
+  background: #FFD700;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 13px 26px;
+  text-decoration: none;
+  margin-right: auto;
+}
+#section__social .social__wrapp .open_modal:hover {
+  transition: 0.6s ease;
+  box-shadow: inherit;
+}
+#section__social .social__wrapp:hover {
+  transition: 0.8s ease;
+  box-shadow: 0px 0px 1px 1px rgb(157, 42, 228);
+}
+#section__social .social__wrapp:nth-child(1) {
+  background-image: url("../img/bg-inst.png");
+  background-repeat: no-repeat;
+  background-position: right 61px;
+  background-size: 29%;
+}
+#section__social .social__wrapp:nth-child(2) {
+  background-image: url("../img/bg-facebook.png");
+  background-repeat: no-repeat;
+  background-position: right 61px;
+  background-size: 29%;
+}
+#section__social .social__wrapp:nth-child(3) {
+  background-image: url("../img/bg-tiktok.png");
+  background-repeat: no-repeat;
+  background-position: right 61px;
+  background-size: 29%;
+}
+#section__social .social__wrapp:nth-child(4) {
+  background-image: url("../img/bg-youtube.png");
+  background-repeat: no-repeat;
+  background-position: right 61px;
+  background-size: 29%;
+}
+
+#section__services {
+  background: url("../img/bgs.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  min-height: 1080px;
+  overflow-x: hidden;
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+#section__services .service__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 223, 251, 0.9);
+}
+#section__services .service__wrapp {
+  z-index: 2;
+  position: relative;
+  max-width: 773px;
+  margin: 0 auto;
+  padding: 70px 0 0 0;
+}
+#section__services .service__wrapp .service__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #4B0082;
+  margin: 0;
+  text-align: center;
+}
+#section__services .service__wrapp .service__text {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #2E0050;
+  line-height: 40px;
+}
+#section__services .slider {
+  position: relative;
+  z-index: 2;
+  max-width: 1607px;
+  padding: 70px 0 0 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+#section__services .slider__item {
+  background: #FFFFFF;
+  border-radius: 50px;
+  max-width: 380px;
+  margin: 0 11px;
+}
+#section__services .slide__wrapp {
+  max-width: 380px;
+  width: 100%;
+  min-height: 550px;
+}
+#section__services .wr__item {
+  min-height: 291px;
+  padding: 18px 0 0 0;
+}
+#section__services .wr__img {
+  max-width: 380px;
+  width: 100%;
+  height: 260px;
+}
+#section__services .wr__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#section__services .wr__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #4B0082;
+  padding: 0 20px;
+  margin: 0 0 25px 0;
+}
+#section__services .wr__text {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #2E0050;
+  padding: 10px 20px;
+}
+#section__services .open_modal {
+  background: var(--main--color);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4B0082;
+  padding: 13px 34px;
+  margin: 0 0 0 20px;
+}
+#section__services .open_modal:hover {
+  transition: 0.8s ease;
+  box-shadow: initial;
+}
+#section__services .slick-list {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: inherit !important;
+  min-height: 600px;
+}
+#section__services .slick-track {
+  display: flex;
+}
+#section__services .slick-arrow {
+  font-size: 0;
+}
+#section__services .slick-arrow.slick-prev {
+  background: url("../img/left.png");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 55px;
+  border: 0;
+  outline: none;
+}
+#section__services .slick-arrow.slick-next {
+  background: url("../img/right.png");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 55px;
+  border: 0;
+  outline: none;
+}
+#section__services .slick-dots {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+#section__services .slick-dots li {
+  list-style-type: none;
+  width: 20px;
+  height: 20px;
+  background: #4B0082;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section__services .slick-dots li.slick-active {
+  background: #4B0082;
+}
+#section__services .slick-dots li.slick-active button {
+  border: 0;
+  background: #4B0082;
+}
+#section__services .slick-dots li button {
+  font-size: 0;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  background: var(--main--color);
+  border: 1px solid #4B0082;
+  padding: 8px 8px;
+}
+
+.slick-slider {
+  position: relative;
+  z-index: 2;
+}
+
+#section__rate .section__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem + 2.3vw);
+  color: #FFFFE0;
+  text-align: center;
+}
+#section__rate .wrapper__rate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#section__rate .wrapper__rate .rate__wrapp {
+  background: #E9C3FF;
+  border-radius: 50px;
+  max-width: 380px;
+  width: 100%;
+  min-height: 635px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2px;
+}
+#section__rate .wrapper__rate .rate__wrapp .rate__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #2E0050;
+  border-bottom: 2px solid #2E0050;
+  max-width: 286px;
+  width: 100%;
+  text-align: center;
+}
+#section__rate .wrapper__rate .rate__wrapp .rate__text {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  color: #2E0050;
+  max-width: 286px;
+  width: 100%;
+}
+#section__rate .wrapper__rate .rate__wrapp .rate__price {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  color: #4B0082;
+  border-top: 2px solid #2E0050;
+  max-width: 286px;
+  width: 100%;
+  text-align: center;
+}
+#section__rate .wrapper__rate .rate__wrapp:hover {
+  transition: 1s ease;
+  background: #D99CFF;
+}
+
+#section__edge .edge__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: calc(1rem + 2.3vw);
+  color: #FFFFE0;
+  text-align: center;
+}
+#section__edge .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+#section__edge .slider__edge {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#section__edge .slider__edge__prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#section__edge .slider__edge__next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#section__edge .slider__line {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+#section__edge .slider__line .slider__item {
+  max-width: 356px;
+  width: 100%;
+  min-height: 300px;
+  margin: 0 35px;
+  background: #9D2AE4;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section__edge .slider__line .slider__item .sl_img {
+  max-width: 150px;
+  max-height: 150px;
+}
+#section__edge .slider__line .slider__item .sl_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#section__edge .slider__line .slider__item .sl__title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: #FFFFE0;
+}
+#section__edge .slider__line .slider__item .sl__text {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  color: #FFFFE0;
+}
+
+@media (max-width: 1303px) {
+  #section__services .slider {
+    flex-direction: column;
+  }
+}
 @media (max-width: 1138px) {
   #section__header .section__link {
     transform: none;
@@ -291,6 +705,15 @@ body {
   #fixed__social {
     right: 10px;
     bottom: 10px;
+  }
+  #section__social .social__wrapp .title__social {
+    font-size: calc(1rem + 3.9vw);
+  }
+  #section__social .social__wrapp .text__social {
+    font-size: 16px;
+  }
+  #section__services .service__wrapp .service__title {
+    font-size: calc(1rem + 2.3vw);
   }
 }
 @media (max-width: 768px) {
