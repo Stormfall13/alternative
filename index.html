@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="scss/style.css">
@@ -38,12 +39,12 @@
         </div>
         <nav class="main-menu">
             <ul>
-                <li><a class="main-menu__link" href="#">Услуги</a></li>
-                <li><a class="main-menu__link" href="#">Тарифы</a></li>
-                <li><a class="main-menu__link" href="#">Преимущества</a></li>
-                <li><a class="main-menu__link" href="#">Команда</a></li>
-                <li><a class="main-menu__link" href="#">Наши работы</a></li>
-                <li><a class="main-menu__link" href="#">Получить расчет</a></li>
+                <li><a class="main-menu__link" href="#section__services">Услуги</a></li>
+                <li><a class="main-menu__link" href="#section__rate">Тарифы</a></li>
+                <li><a class="main-menu__link" href="#section__edge">Преимущества</a></li>
+                <li><a class="main-menu__link" href="#section__comand">Команда</a></li>
+                <li><a class="main-menu__link" href="#section__work">Наши работы</a></li>
+                <li><a class="main-menu__link" href="#section__prev">Получить расчет</a></li>
             </ul>
         </nav> 
     </div> 
@@ -58,9 +59,11 @@
     </div>
 </div>
 <div id="btn__down">
-    <a href="#" class="link__down">
-        <img src="img/down.png" alt="">
-    </a>
+    <nav>
+        <a href="#section__social" class="link__down">
+            <img src="img/down.png" alt="">
+        </a> 
+    </nav>
 </div>
 <div id="fixed__social">
     <a href="#" class="link__social">
@@ -196,40 +199,199 @@
 
 <div id="section__edge">
     <p class="edge__title">Наши преимущества</p>
-    <div class="container">
-        <div class="slider__edge">
-            <div class="slider__line">
-                <div class="slider__item">
-                    <div class="sl__img">
-                        <img src="img/okay.png" alt="">
-                    </div>
-                    <div class="sl__title">Начнете набирать</div>
-                    <div class="sl__text">живую аудиторию</div>
+    <div class="slider">
+        <div class="slider__item">
+            <div class="sl__img">
+                <img src="img/okay.png" alt="">
+            </div>
+            <div class="sl__title">Начнете набирать</div>
+            <div class="sl__text">живую аудиторию</div> 
+        </div>
+        <div class="slider__item">
+            <div class="sl__img">
+                <img src="img/okay.png" alt="">
+            </div>
+            <div class="sl__title">Увеличите</div>
+            <div class="sl__text">конкурентоспособность</div> 
+        </div>
+        <div class="slider__item">
+                <div class="sl__img">
+                    <img src="img/okay.png" alt="">
                 </div>
-                <div class="slider__item">
-                    <div class="sl__img">
-                        <img src="img/okay.png" alt="">
-                    </div>
-                    <div class="sl__title">Увеличите</div>
-                    <div class="sl__text">конкурентоспособность</div>
+                <div class="sl__title">Повысите</div>
+                <div class="sl__text">узнаваемость бренда</div> 
+        </div>
+    </div>
+</div>
+
+<div class="section__double">
+    <div class="overlay__double"></div>
+    <div id="section__comand">
+        <div class="comand__title">Наша команда</div>
+        <div class="comand__wrapp">
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
                 </div>
-                <div class="slider__item">
-                    <div class="sl__img">
-                        <img src="img/okay.png" alt="">
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
                     </div>
-                    <div class="sl__title">Повысите</div>
-                    <div class="sl__text">узнаваемость бренда</div> 
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
+            </div>
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
+                </div>
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
+                    </div>
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
+            </div>
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
+                </div>
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
+                    </div>
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
+            </div>
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
+                </div>
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
+                    </div>
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
+            </div>
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
+                </div>
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
+                    </div>
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
+            </div>
+            <div class="comand__wrapper">
+                <div class="face__cmd">
+                    <img src="img/cmd.png" alt="">
+                </div>
+                <div class="text__wrapp">
+                    <div class="name__wr">
+                        Фамилия Имя
+                    </div>
+                    <p class="text__text">Сайт рыбатекст поможет дизайнеру, 
+                        верстальщику, вебмастеру сгенерировать 
+                        несколько абзацев.</p>
+                </div>
             </div>
         </div>
-        <button class="slider__edge__prev">Prev</button>
-        <button class="slider__edge__next">Next</button>
-        
+    </div>
+
+<div id="section__work">
+    <div class="work__title">Наши работы</div>
+    <div class="slider">
+        <div class="slider__item">
+            <img src="img/z1.png" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="img/z2.png" alt="">
+        </div>
+        <div class="slider__item">
+                <img src="img/z3.png" alt="">
+        </div>
     </div> 
 </div>
 
-<div style="height: 1000px;"></div>
+</div>
 
-<footer></footer>
+<div id="section__prev">
+
+    <div class="wrapp__prev">
+        <div class="title__prev">Хотите получить расчет рекламы в социальных сетях?</div>
+        <div class="text__prev">Жмите на кнопку «Получить просчет» и в течение суток мы 
+            пришлём вам форму расчета стоимости и эффективности рекламной кампании в 
+            социальных сетях!</div>
+        <a class="open_modal" href="#open">Получить расчет</a> 
+    </div>
+
+    <div class="wrapp__social">
+        <a href="#">
+            <img src="img/big_social.png" alt="">
+        </a>
+    </div>
+
+</div>
+
+
+<div id="section__next">
+    <div class="wrapp__title">
+        <div class="title__next">Оставить заявку</div>
+        <p class="text__next">Мы свяжемся с вами в течение часа!</p>
+    </div>
+    <div class="next__container">
+        <div class="next__form">
+        
+            <div class="form__next">
+                <input type="text" class="input__next" style="display: block;" placeholder="Имя">
+                <input type="text" class="input__next" style="display: block;" placeholder="Телефон">
+                <textarea type="text" placeholder="Текст сообщения" class="input__next" style="display: block;" ></textarea>
+                <div class="valid__next" style="display: none;">Форма отправлена</div>
+                <button class="btn__next" style="display: block;">Отправить</button>
+            </div>
+            
+        </div> 
+    </div>
+</div>
+
+<div class="up">
+    <div class="upbtn">
+        <img src="img/up.png" alt="">
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="footer__overlay"></div>
+    <div class="footer__item">
+        <div class="wrapp__tel">
+            <div class="wrapp__icon">
+                <img src="img/tel.png" alt=""> 
+            </div>
+            <a href="#" class="link__tel">+998 (90) 000-00-00</a>
+        </div>
+        <div class="footer__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="wrapp__social">
+            <div class="wrapp__icon">
+                <img src="img/footer_inst.png" alt="">
+            </div>
+            <a href="#" class="link__social">alternativa.company</a>
+        </div> 
+    </div>
+</footer>
 
 <div id="modal" class="modal bounceIn">
     <div class="popup__wrapp">
