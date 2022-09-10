@@ -17,14 +17,6 @@ mainMenu.addEventListener("click", (event) => {
 });
 
 
-// link.addEventListener("click", () => {
-//     mainMenu.classList.style.display = 'none'; 
-// });  
-
-
-
-
-
 
 
 let open_modal = document.querySelectorAll('.open_modal');
