@@ -39,12 +39,12 @@
         </div>
         <nav class="main-menu">
             <ul>
-                <li><a class="main-menu__link" href="#section__services">Услуги</a></li>
-                <li><a class="main-menu__link" href="#section__rate">Тарифы</a></li>
-                <li><a class="main-menu__link" href="#section__edge">Преимущества</a></li>
-                <li><a class="main-menu__link" href="#section__comand">Команда</a></li>
-                <li><a class="main-menu__link" href="#section__work">Наши работы</a></li>
-                <li><a class="main-menu__link" href="#section__prev">Получить расчет</a></li>
+                <li><a class="main-menu__link" href="#slider__services">Услуги</a></li>
+                <li><a class="main-menu__link" href="#wrapper__rate">Тарифы</a></li>
+                <li><a class="main-menu__link" href="#slider__edge">Преимущества</a></li>
+                <li><a class="main-menu__link" href="#comand__wrapp">Команда</a></li>
+                <li><a class="main-menu__link" href="#slider__work">Наши работы</a></li>
+                <li><a class="main-menu__link" href="#title__next">Получить расчет</a></li>
             </ul>
         </nav> 
     </div> 
@@ -54,9 +54,7 @@
             первого дня запуска рекламной кампании.</p>
         <a class="btn__title open_modal" href="#open">Оставить заявку</a>
     </div>
-    <div class="section__link">
-        <a href="#" class="link__main">SMM. Marketing. PR</a>
-    </div>
+    <div class="section__link">SMM. Marketing. PR</div>
 </div>
 <div id="btn__down">
     <nav>
@@ -74,7 +72,7 @@
     </a>
 </div>
 
-<div id="section__social">
+<div id="section__social" class="square-wrapper">
     <div class="social__wrapp">
         <div class="wrapper__item">
             <p class="title__social">Instagram, можем, умеем</p>
@@ -120,17 +118,17 @@
         начинающему оратору отточить навык публичных выступлений в 
         домашних условиях. </p>
     </div>
-    <div class="slider">
+    <div class="slider" id="slider__services">
         <div class="slider__item">
             <div class="slide__wrapp">
                 <div class="wr__img">
                     <img src="img/prod.png" alt=""> 
                 </div>
                 <div class="wr__item">
-                    <p class="wr__title">Создание сайтов</p>
-                    <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                        верстальщику, вебмастеру сгенерировать несколько 
-                        абзацев.</p>
+                        <p class="wr__title">Создание сайтов</p>
+                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                            верстальщику, вебмастеру сгенерировать несколько 
+                            абзацев.</p> 
                     <a class="open_modal" href="#open">Оставить заявку</a> 
                 </div>
             </div>
@@ -141,10 +139,10 @@
                     <img src="img/prod.png" alt=""> 
                 </div>
                 <div class="wr__item">
-                    <p class="wr__title">Настройка контекстной рекламы</p>
-                    <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                        верстальщику, вебмастеру сгенерировать несколько 
-                        абзацев.</p>
+                        <p class="wr__title">Настройка контекстной рекламы</p>
+                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                            верстальщику, вебмастеру сгенерировать несколько 
+                            абзацев.</p> 
                     <a class="open_modal" href="#open">Оставить заявку</a> 
                 </div>
             </div> 
@@ -155,10 +153,10 @@
                     <img src="img/prod.png" alt=""> 
                 </div>
                 <div class="wr__item">
-                    <p class="wr__title">Создание дизайна различного рода</p>
-                    <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                        верстальщику, вебмастеру сгенерировать несколько 
-                        абзацев.</p>
+                        <p class="wr__title">Создание дизайна различного рода</p>
+                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                            верстальщику, вебмастеру сгенерировать несколько 
+                            абзацев.</p> 
                     <a class="open_modal" href="#open">Оставить заявку</a> 
                 </div>
             </div> 
@@ -169,7 +167,7 @@
 
 <div id="section__rate">
     <p class="section__title">Тарифы на продвижение</p>
-    <div class="wrapper__rate">
+    <div class="wrapper__rate" id="wrapper__rate">
         <div class="rate__wrapp">
             <div class="rate__title">Лайт</div>
             <p class="rate__text">Сайт рыбатекст поможет дизайнеру, верстальщику, 
@@ -195,11 +193,12 @@
                 <div class="rate__price">от 300$</div>
         </div> 
     </div>
+    <a class="open_modal" href="#open">Оставить заявку</a>
 </div>
 
 <div id="section__edge">
     <p class="edge__title">Наши преимущества</p>
-    <div class="slider">
+    <div class="slider" id="slider__edge">
         <div class="slider__item">
             <div class="sl__img">
                 <img src="img/okay.png" alt="">
@@ -228,7 +227,7 @@
     <div class="overlay__double"></div>
     <div id="section__comand">
         <div class="comand__title">Наша команда</div>
-        <div class="comand__wrapp">
+        <div class="comand__wrapp" id="comand__wrapp">
             <div class="comand__wrapper">
                 <div class="face__cmd">
                     <img src="img/cmd.png" alt="">
@@ -312,21 +311,60 @@
 
 <div id="section__work">
     <div class="work__title">Наши работы</div>
-    <div class="slider">
+    <div class="slider" id="slider__work">
         <div class="slider__item">
-            <img src="img/z1.png" alt="">
+            <div class="work__img">
+                <img src="img/z1.png" alt="">
+            </div>
+            <div class="sl__text">
+                <ul class="text__wrapp">
+                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                    <li>Создание единого визуала на странице.</li>
+                    <li>Привлечение клиентов.</li>
+                    <li>Организация и запуск курса по мибилографии.</li>
+                    <li>Рекомендация по номеру:</li>
+                    <li>+998 90 033 32 02 </li>
+                    <li>Давлат Аминович Руководитель компании</li>
+                </ul>
+            </div>
         </div>
         <div class="slider__item">
-            <img src="img/z2.png" alt="">
+            <div class="work__img">
+                <img src="img/z2.png" alt=""> 
+            </div>
+            <div class="sl__text">
+                <ul class="text__wrapp">
+                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                    <li>Создание единого визуала на странице.</li>
+                    <li>Привлечение клиентов.</li>
+                    <li>Организация и запуск курса по мибилографии.</li>
+                    <li>Рекомендация по номеру:</li>
+                    <li>+998 90 033 32 02 </li>
+                    <li>Давлат Аминович Руководитель компании</li>
+                </ul>
+            </div>
         </div>
         <div class="slider__item">
+            <div class="work__img">
                 <img src="img/z3.png" alt="">
+            </div>
+            <div class="sl__text">
+                <ul class="text__wrapp">
+                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                    <li>Создание единого визуала на странице.</li>
+                    <li>Привлечение клиентов.</li>
+                    <li>Организация и запуск курса по мибилографии.</li>
+                    <li>Рекомендация по номеру:</li>
+                    <li>+998 90 033 32 02 </li>
+                    <li>Давлат Аминович Руководитель компании</li>
+                </ul>
+            </div>
         </div>
     </div> 
 </div>
 
 </div>
-
+<div class="test"></div>
 <div id="section__prev">
 
     <div class="wrapp__prev">
@@ -337,18 +375,30 @@
         <a class="open_modal" href="#open">Получить расчет</a> 
     </div>
 
-    <div class="wrapp__social">
-        <a href="#">
-            <img src="img/big_social.png" alt="">
-        </a>
+    <div class="social__slider">
+        <div class="wrapp__social">
+            <a href="#">
+                <img src="img/big_social.png" alt="">
+            </a>
+        </div>
+        <div class="wrapp__social">
+            <a href="#">
+                <img src="img/big_social.png" alt="">
+            </a>
+        </div>
+        <div class="wrapp__social">
+            <a href="#">
+                <img src="img/big_social.png" alt="">
+            </a>
+        </div>
     </div>
-
+    
 </div>
 
 
 <div id="section__next">
     <div class="wrapp__title">
-        <div class="title__next">Оставить заявку</div>
+        <div class="title__next" id="title__next">Оставить заявку</div>
         <p class="text__next">Мы свяжемся с вами в течение часа!</p>
     </div>
     <div class="next__container">
