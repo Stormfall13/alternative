@@ -108,6 +108,16 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $('.social__slider').slick({
+        Infinity: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2500, 
+    });
+});
 
 let sections = $('section'), 
 nav = $('nav'), 
@@ -141,7 +151,7 @@ $('body').append('<div class="upbtn"></div>');
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
         $('.upbtn').css({
-            bottom: '15px'
+            bottom: '315px'
         });
         } else {
         $('.upbtn').css({
@@ -155,7 +165,6 @@ $('.upbtn').on('click',function() {
     }, 500);
     return false;
 });
-
 
 
 
