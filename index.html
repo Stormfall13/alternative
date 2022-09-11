@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="scss/item.css">
 <link rel="stylesheet" href="scss/popup.css">
 <link rel="stylesheet" href="scss/animate.min.css">
+<link rel="stylesheet" href="scss/swiper-bundle.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>SSM Marketing</title>
 </head>
@@ -57,11 +58,9 @@
     <div class="section__link">SMM. Marketing. PR</div>
 </div>
 <div id="btn__down">
-    <nav>
-        <a href="#section__social" class="link__down">
+        <div class="link__down">
             <img src="img/down.png" alt="">
-        </a> 
-    </nav>
+        </div> 
 </div>
 <div id="fixed__social">
     <a href="#" class="link__social">
@@ -118,51 +117,60 @@
         начинающему оратору отточить навык публичных выступлений в 
         домашних условиях. </p>
     </div>
-    <div class="slider" id="slider__services">
-        <div class="slider__item">
-            <div class="slide__wrapp">
-                <div class="wr__img">
-                    <img src="img/prod.png" alt=""> 
-                </div>
-                <div class="wr__item">
-                        <p class="wr__title">Создание сайтов</p>
-                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                            верстальщику, вебмастеру сгенерировать несколько 
-                            абзацев.</p> 
-                    <a class="open_modal" href="#open">Оставить заявку</a> 
-                </div>
-            </div>
-        </div>
-        <div class="slider__item">
-            <div class="slide__wrapp">
-                <div class="wr__img">
-                    <img src="img/prod.png" alt=""> 
-                </div>
-                <div class="wr__item">
-                        <p class="wr__title">Настройка контекстной рекламы</p>
-                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                            верстальщику, вебмастеру сгенерировать несколько 
-                            абзацев.</p> 
-                    <a class="open_modal" href="#open">Оставить заявку</a> 
-                </div>
-            </div> 
-        </div>
-        <div class="slider__item">
-            <div class="slide__wrapp">
-                <div class="wr__img">
-                    <img src="img/prod.png" alt=""> 
-                </div>
-                <div class="wr__item">
-                        <p class="wr__title">Создание дизайна различного рода</p>
-                        <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
-                            верстальщику, вебмастеру сгенерировать несколько 
-                            абзацев.</p> 
-                    <a class="open_modal" href="#open">Оставить заявку</a> 
-                </div>
-            </div> 
-        </div>
-    </div>
     
+    <div class="swiper__body" id="slider__services">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide__wrapp">
+                        <div class="wr__img">
+                            <img src="img/prod.png" alt=""> 
+                        </div>
+                        <div class="wr__item">
+                                <p class="wr__title">Создание сайтов</p>
+                                <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                                    верстальщику, вебмастеру сгенерировать несколько 
+                                    абзацев.</p> 
+                            <a class="open_modal" href="#open">Оставить заявку</a> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__wrapp">
+                        <div class="wr__img">
+                            <img src="img/prod.png" alt=""> 
+                        </div>
+                        <div class="wr__item">
+                                <p class="wr__title">Настройка контекстной рекламы</p>
+                                <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                                    верстальщику, вебмастеру сгенерировать несколько 
+                                    абзацев.</p> 
+                            <a class="open_modal" href="#open">Оставить заявку</a> 
+                        </div>
+                    </div>  
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__wrapp">
+                        <div class="wr__img">
+                            <img src="img/prod.png" alt=""> 
+                        </div>
+                        <div class="wr__item">
+                                <p class="wr__title">Создание дизайна различного рода</p>
+                                <p class="wr__text">Сайт рыбатекст поможет дизайнеру, 
+                                    верстальщику, вебмастеру сгенерировать несколько 
+                                    абзацев.</p> 
+                            <a class="open_modal" href="#open">Оставить заявку</a> 
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> 
+    </div> 
+
 </div>
 
 <div id="section__rate">
@@ -198,29 +206,39 @@
 
 <div id="section__edge">
     <p class="edge__title">Наши преимущества</p>
-    <div class="slider" id="slider__edge">
-        <div class="slider__item">
-            <div class="sl__img">
-                <img src="img/okay.png" alt="">
-            </div>
-            <div class="sl__title">Начнете набирать</div>
-            <div class="sl__text">живую аудиторию</div> 
-        </div>
-        <div class="slider__item">
-            <div class="sl__img">
-                <img src="img/okay.png" alt="">
-            </div>
-            <div class="sl__title">Увеличите</div>
-            <div class="sl__text">конкурентоспособность</div> 
-        </div>
-        <div class="slider__item">
-                <div class="sl__img">
-                    <img src="img/okay.png" alt="">
+
+    <div class="swiper__body" id="slider__edge">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="sl__img">
+                        <img src="img/okay.png" alt="">
+                    </div>
+                        <div class="sl__title">Начнете набирать</div>
+                        <div class="sl__text">живую аудиторию</div>  
                 </div>
-                <div class="sl__title">Повысите</div>
-                <div class="sl__text">узнаваемость бренда</div> 
-        </div>
-    </div>
+                <div class="swiper-slide">
+                    <div class="sl__img">
+                        <img src="img/okay.png" alt="">
+                    </div>
+                        <div class="sl__title">Увеличите</div>
+                        <div class="sl__text">конкурентоспособность</div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="sl__img">
+                        <img src="img/okay.png" alt="">
+                    </div>
+                        <div class="sl__title">Повысите</div>
+                        <div class="sl__text">узнаваемость бренда</div>  
+                </div>
+            </div> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> 
+    </div> 
+
 </div>
 
 <div class="section__double">
@@ -311,57 +329,63 @@
 
 <div id="section__work">
     <div class="work__title">Наши работы</div>
-    <div class="slider" id="slider__work">
-        <div class="slider__item">
-            <div class="work__img">
-                <img src="img/z1.png" alt="">
-            </div>
-            <div class="sl__text">
-                <ul class="text__wrapp">
-                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
-                    <li>Создание единого визуала на странице.</li>
-                    <li>Привлечение клиентов.</li>
-                    <li>Организация и запуск курса по мибилографии.</li>
-                    <li>Рекомендация по номеру:</li>
-                    <li>+998 90 033 32 02 </li>
-                    <li>Давлат Аминович Руководитель компании</li>
-                </ul>
-            </div>
-        </div>
-        <div class="slider__item">
-            <div class="work__img">
-                <img src="img/z2.png" alt=""> 
-            </div>
-            <div class="sl__text">
-                <ul class="text__wrapp">
-                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
-                    <li>Создание единого визуала на странице.</li>
-                    <li>Привлечение клиентов.</li>
-                    <li>Организация и запуск курса по мибилографии.</li>
-                    <li>Рекомендация по номеру:</li>
-                    <li>+998 90 033 32 02 </li>
-                    <li>Давлат Аминович Руководитель компании</li>
-                </ul>
-            </div>
-        </div>
-        <div class="slider__item">
-            <div class="work__img">
-                <img src="img/z3.png" alt="">
-            </div>
-            <div class="sl__text">
-                <ul class="text__wrapp">
-                    <li>Разработка логотипа для страницы ROOM 47 studio.</li>
-                    <li>Создание единого визуала на странице.</li>
-                    <li>Привлечение клиентов.</li>
-                    <li>Организация и запуск курса по мибилографии.</li>
-                    <li>Рекомендация по номеру:</li>
-                    <li>+998 90 033 32 02 </li>
-                    <li>Давлат Аминович Руководитель компании</li>
-                </ul>
-            </div>
-        </div>
-    </div> 
+
+    <div class="swiper__body" id="slider__work">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/z1.png" alt="">
+                    <div class="sl__text">
+                        <ul class="text__wrapp">
+                            <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                            <li>Создание единого визуала на странице.</li>
+                            <li>Привлечение клиентов.</li>
+                            <li>Организация и запуск курса по мибилографии.</li>
+                            <li>Рекомендация по номеру:</li>
+                            <li>+998 90 033 32 02 </li>
+                            <li>Давлат Аминович Руководитель компании</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/z2.png" alt="">
+                    <div class="sl__text">
+                        <ul class="text__wrapp">
+                            <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                            <li>Создание единого визуала на странице.</li>
+                            <li>Привлечение клиентов.</li>
+                            <li>Организация и запуск курса по мибилографии.</li>
+                            <li>Рекомендация по номеру:</li>
+                            <li>+998 90 033 32 02 </li>
+                            <li>Давлат Аминович Руководитель компании</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/z3.png" alt="">
+                    <div class="sl__text">
+                        <ul class="text__wrapp">
+                            <li>Разработка логотипа для страницы ROOM 47 studio.</li>
+                            <li>Создание единого визуала на странице.</li>
+                            <li>Привлечение клиентов.</li>
+                            <li>Организация и запуск курса по мибилографии.</li>
+                            <li>Рекомендация по номеру:</li>
+                            <li>+998 90 033 32 02 </li>
+                            <li>Давлат Аминович Руководитель компании</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> 
+    </div>
+
 </div>
+
+
 
 </div>
 <div class="test"></div>
@@ -465,6 +489,7 @@
 </div> 
 
 <script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
