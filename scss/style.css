@@ -1580,15 +1580,15 @@ body {
   .section__double #section__comand .comand__wrapp .comand__wrapper .text__wrapp {
     padding: 0 15px;
   }
+  .section__double #section__comand .comand__title {
+    font-size: 48px;
+  }
   #section__social .social__wrapp {
     min-height: 330px;
   }
   #section__prev .wrapp__prev .title__prev {
     font-size: 36px;
     line-height: 45px;
-  }
-   #section__comand .comand__title {
-    font-size: 48px !important;
   }
   #section__work .work__title {
     font-size: 48px !important;
