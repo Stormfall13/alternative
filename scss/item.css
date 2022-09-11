@@ -1,3 +1,81 @@
 :root {
   --main--color: #FFD700;
+}
+
+@media (max-width: 1279px) {
+  #header .logo__item {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #header .header__contact {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__header .section__title {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__social .social__wrapp {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__services .service__wrapp .service__title {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__services .service__wrapp .service__text {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__rate .section__title {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #wrapper__rate .rate__wrapp {
+    -webkit-animation: none !important;
+            animation: none !important;
+    transform: rotate(0) !important;
+  }
+  #section__edge {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section__double #section__comand .comand__title {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section__double #section__comand .comand__wrapp {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section__double #section__work .work__title {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__prev .wrapp__prev {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #section__prev .wrapp__social {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
+  #footer .footer__item {
+    transform: translate(0);
+    -webkit-animation: none;
+            animation: none;
+  }
 }/*# sourceMappingURL=item.css.map */
