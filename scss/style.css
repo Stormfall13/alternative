@@ -1824,6 +1824,9 @@ body {
   #section__prev .wrapp__prev .title__prev {
     font-size: 50px;
   }
+  #btn__down {
+    display: none;
+  }
 }
 @media (max-width: 479px) {
   .section__double #section__comand .comand__wrapp .comand__wrapper .text__wrapp {
