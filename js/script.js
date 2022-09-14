@@ -51,6 +51,8 @@ for (var i = 0; i < elements.length; i++) {
     var valid = document.getElementsByClassName("valid");
     var images = document.getElementsByClassName("bg__form");
     var textForm = document.getElementsByClassName("text__form");
+    var modalMain = document.getElementsByClassName("modal");
+    var popupWrapp = document.getElementsByClassName("popup__wrapp");
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.visibility = "hidden";
         divsToHide[i].style.display = "none";
@@ -59,6 +61,9 @@ for (var i = 0; i < elements.length; i++) {
     valid[0].style.display = "block";
     images[0].style.display = "none";
     textForm[0].style.display = "none";
+    modalMain[0].style.height = "290px";
+    modalMain[0].style.top = "15%";
+    popupWrapp[0].style.display = "flex";
     };
 };
 
@@ -76,59 +81,90 @@ for (var i = 0; i < element.length; i++) {
     };
 };
 
-$(document).ready(function(){
-    $('.slider').slick({
-        Infinity: true,
-        slidesToScroll: 3,
-        slidesToShow: 2,
-        variableWidth: true,
-        adaptiveHeight: true,
-        responsive:[
-            {
-                breakpoint: 1303,
-                settings: {
-                    slidesToShow: 1,
-                    arrows: false,
-                    slidesToScroll: 1,
-                    dots: true,
-                }
+
+
+$('.slider').slick({
+    dots:false,
+    arrows: true,
+    adaptiveHeight:true,
+    slidesToShow: 3,
+    loop:true,
+    infinite:true,
+    speed:800,
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 2,
+                dots:true,
+                arrows:false
+
             }
-        ]
-    });
-});
+        },
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 1,
+                dots:true,
+                arrows:false
+            }
+        },
+    ]
+    
+})
 
-new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 70,
-    loop: true,
-    loopedSlider: 3,
-    touchRatio: 3,
-    touchAngle: 30,
-    grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints:{
-        360: {
-        slidesPerView: 1,
-        slidesPerGroup: 1
+$('.mySwiper').slick({
+    infinite: true,
+    dots:false,
+    slidesToShow:3,
+    slidesToScroll: 1,
+    speed:500,
+    responsive: [
+        {
+            breakpoint:1450,
+            settings: {
+                slidesToShow:2,
+                dots:true,
+                arrows:false
+            }
         },
-        768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-        },
-        1280: {
-        
-        },
-    },
+        {
+            breakpoint:1000,
+            settings: {
+                slidesToShow:1,
+                dots:true,
+                arrows:false
+            }
+        }
 
-});
+    ]
+})
+$('.slider__edge').slick({
+    infinite: true,
+    dots:false,
+    slidesToShow:3,
+    slidesToScroll: 1,
+    speed:500,
+    responsive: [
+        {
+            breakpoint:1450,
+            settings: {
+                slidesToShow:2,
+                dots:true,
+                arrows:false
+            }
+        },
+        {
+            breakpoint:760,
+            settings: {
+                slidesToShow:1,
+                dots:true,
+                arrows:false
+            }
+        }
+
+    ]
+})
 
 
 $(document).ready(function(){
@@ -138,9 +174,11 @@ $(document).ready(function(){
         slidesToShow: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2500, 
+        autoplaySpeed: 2500,
     });
 });
+
+
 
 
 
@@ -162,6 +200,9 @@ $('.upbtn').on('click',function() {
     }, 500);
     return false;
 });
+
+
+
 
 
 
