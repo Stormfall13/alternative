@@ -6,22 +6,21 @@
   bottom: 0;
   right: 0;
   z-index: 99999;
-  max-width: 500px;
-  height: 100%;
-  max-height: 920px;
+  max-width: 380px;
+  max-height: 600px;
+  overflow: auto;
   margin: 0 auto;
   background: #4B0082;
   border-radius: 50px;
 }
 
 .popup__wrapp {
-  max-height: 920px;
+  max-height: 600px;
   height: 100%;
-  overflow-x: auto;
 }
 
 .bg__form {
-  max-width: 500px;
+  max-width: 380px;
   height: auto;
   position: relative;
 }
@@ -47,14 +46,14 @@
 .text__form {
   font-family: "Baloo 2", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
+  margin: 5px 0;
   color: #FFFFFF;
   text-align: center;
 }
 
 .form {
-  max-width: 416px;
-  min-height: 500px;
+  max-width: 360px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -66,37 +65,38 @@
   font-family: "Baloo 2", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 16px;
   color: #5E5E5E;
   padding: 0 0 0 30px;
-  max-width: 386px;
+  max-width: 286px;
   width: 100%;
-  height: 78px;
+  height: 56px;
   display: block;
   background: #FBFBFB;
   border-radius: 50px;
   outline: none;
   border: 0;
+  margin: 0 0 18px 0;
 }
 .form textarea {
   font-family: "Baloo 2", sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 16px;
   color: #5E5E5E;
-  max-width: 395px;
+  max-width: 295px;
   width: 100%;
-  height: 110px;
+  height: 65px;
   resize: none;
   background: #FBFBFB;
-  border-radius: 50px;
+  border-radius: 30px;
   outline: none;
   border: 0;
-  padding: 30px 0px 0px 21px;
+  padding: 15px 0px 0px 21px;
 }
 .form .valid {
   font-family: "Baloo 2", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   color: #FFFFFF;
 }
 .form .btn {
@@ -111,8 +111,9 @@
   border-radius: 50px;
   border: 0;
   outline: none;
-  padding: 22px 97px;
+  padding: 11px 65px;
   margin: 0 auto;
+  margin: 19px 0 0 0;
 }
 
 .modal_vis {
