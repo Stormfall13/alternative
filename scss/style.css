@@ -1818,7 +1818,7 @@ body {
   #section__next .next__form .form__next textarea {
     font-size: 22px;
     padding: 18px 0px 0px 21px;
-    max-width: 329px;
+    max-width: 280px;
     height: 70px;
     border-radius: 32px;
     margin: 0 auto 40px auto;
@@ -1841,6 +1841,9 @@ body {
     max-width: 170px;
     max-height: 170px;
     padding: 5px;
+  }
+  #section__prev .open_modal {
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
