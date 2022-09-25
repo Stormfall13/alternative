@@ -1940,6 +1940,9 @@ body {
   #fixed__social {
     display: none;
   }
+  #footer {
+    min-height: 220px;
+  }
   #footer .footer__item .footer__logo {
     max-width: 150px;
   }
@@ -1955,6 +1958,11 @@ body {
   }
   .mySwiper__item-text {
     font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  #header .header__contact {
+    max-width: 210px;
   }
 }
 @media (max-width: 360px) {
