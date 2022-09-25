@@ -1961,6 +1961,12 @@ body {
   }
 }
 @media (max-width: 375px) {
+  #header .logo__item {
+    max-width: 210px;
+  }
+  #header .logo__item .logo {
+    margin: 0px 0 0 11px;
+  }
   #header .header__contact {
     max-width: 210px;
   }
