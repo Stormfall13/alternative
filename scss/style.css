@@ -1879,22 +1879,30 @@ body {
   }
 }
 @media (max-width: 479px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
   #header .logo__item {
-    padding: 10px 0;
-    margin: 30px 0;
-    max-width: 240px;
+    padding: 4px 0;
+    margin: 15px 0;
+    max-width: 200px;
   }
   #header .logo__item .logo {
-    max-width: 150px;
-    max-height: 87px;
+    max-width: 130px;
+    max-height: 100%;
     margin: 0px 0 0 20px;
   }
   #header .header__contact {
-    max-width: 240px;
-    padding: 20px 0;
+    max-width: 200px;
+    padding: 15px 0;
   }
   #header .header__contact .link__contact {
-    font-size: 19px;
+    font-size: 16px;
+  }
+  #section__header {
+    padding: 40px 20px 0 20px;
   }
   .section__double #section__comand .comand__wrapp .comand__wrapper .text__wrapp {
     padding: 0 15px;
@@ -1944,31 +1952,21 @@ body {
     min-height: 220px;
   }
   #footer .footer__item .footer__logo {
-    max-width: 150px;
+    max-width: 130px;
   }
   #footer .footer__item .wrapp__icon {
-    width: 37px;
-    height: 37px;
+    width: 19px;
+    height: 19px;
+    margin: 0 10px 0 0;
   }
   #footer .footer__item .wrapp__tel .link__tel {
-    font-size: 25px;
+    font-size: 16px;
   }
   #footer .footer__item .wrapp__social .link__social {
-    font-size: 25px;
+    font-size: 16px;
   }
   .mySwiper__item-text {
     font-size: 24px;
-  }
-}
-@media (max-width: 375px) {
-  #header .logo__item {
-    max-width: 210px;
-  }
-  #header .logo__item .logo {
-    margin: 0px 0 0 11px;
-  }
-  #header .header__contact {
-    max-width: 210px;
   }
 }
 @media (max-width: 360px) {
