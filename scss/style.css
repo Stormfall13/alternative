@@ -1879,6 +1879,23 @@ body {
   }
 }
 @media (max-width: 479px) {
+  #header .logo__item {
+    padding: 10px 0;
+    margin: 30px 0;
+    max-width: 240px;
+  }
+  #header .logo__item .logo {
+    max-width: 150px;
+    max-height: 87px;
+    margin: 0px 0 0 20px;
+  }
+  #header .header__contact {
+    max-width: 240px;
+    padding: 20px 0;
+  }
+  #header .header__contact .link__contact {
+    font-size: 19px;
+  }
   .section__double #section__comand .comand__wrapp .comand__wrapper .text__wrapp {
     padding: 0 15px;
   }
@@ -1922,6 +1939,9 @@ body {
   }
   #fixed__social {
     display: none;
+  }
+  #footer .footer__item .footer__logo {
+    max-width: 150px;
   }
   #footer .footer__item .wrapp__icon {
     width: 37px;
