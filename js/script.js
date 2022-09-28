@@ -16,7 +16,6 @@ mainMenu.addEventListener("click", (event) => {
 
 
 
-
 let open_modal = document.querySelectorAll('.open_modal');
 let close_modal = document.getElementById('close_modal');
 let modal = document.getElementById('modal');
@@ -37,8 +36,6 @@ close_modal.onclick = function() { // клик на закрытие
         body.classList.remove('body_block'); // возвращаем прокрутку
     }, 500);
 };
-
-
 
 
 
@@ -80,6 +77,8 @@ for (var i = 0; i < element.length; i++) {
     validNext[0].style.display = "block";
     };
 };
+
+
 
 
 
@@ -205,4 +204,120 @@ $('.upbtn').on('click',function() {
 
 
 
+function social_section(){
+    /* SECTION SOCIAL ANIM */
+    var element = document.getElementById('section__social') + window.pageYOffset + 'px';
+    var element = document.getElementById('section__social');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 100) {
+        element.classList.add('_section__social');
+    } else {
+        element.classList.remove('_section__social');
+    }
+    });
+    /*#######################*/
+
+    
+    /* SECTION SERVICES ANIM */
+    var services = document.getElementById('section__services') + window.pageYOffset + 'px';
+    var services = document.getElementById('section__services');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 1400) {
+        services.classList.add('_action__services');
+    } else {
+        services.classList.remove('_action__services');
+    }
+    });
+    /*########################*/
+
+
+    /* SECTION RATE ANIM */
+    var rate = document.getElementById('section__rate') + window.pageYOffset + 'px';
+    var rate = document.getElementById('section__rate');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 2400) {
+        rate.classList.add('_rate__active');
+    } else {
+        rate.classList.remove('_rate__active');
+    }
+    });
+    /*########################*/
+
+    /* SECTION EDGE ANIM */
+    var edge = document.getElementById('section__edge') + window.pageYOffset + 'px';
+    var edge = document.getElementById('section__edge');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 2600) {
+        edge.classList.add('_edge__active');
+    } else {
+        edge.classList.remove('_edge__active');
+    }
+    });
+    /*########################*/
+
+    /* SECTION EDGE ANIM */
+    var comand = document.getElementById('section__comand') + window.pageYOffset + 'px';
+    var comand = document.getElementById('section__comand');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 3600) {
+        comand.classList.add('_comand__active');
+    } else {
+        comand.classList.remove('_comand__active');
+    }
+    });
+    /*########################*/
+
+    /* SECTION WORK ANIM */
+    var work = document.getElementById('section__work') + window.pageYOffset + 'px';
+    var work = document.getElementById('section__work');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 5400) {
+        work.classList.add('_work__active');
+    } else {
+        work.classList.remove('_work__active');
+    }
+    });
+    /*########################*/ 
+
+    /* SECTION PREV ANIM */
+    var prev = document.getElementById('section__prev') + window.pageYOffset + 'px';
+    var prev = document.getElementById('section__prev');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 6000) {
+        prev.classList.add('_prev__active');
+    } else {
+        prev.classList.remove('_prev__active');
+    }
+    });
+    /*########################*/ 
+
+
+
+    /* SECTION FOOTER ANIM */
+    var footer = document.getElementById('footer') + window.pageYOffset + 'px';
+    var footer = document.getElementById('footer');
+    window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 7000) {
+        footer.classList.add('_footer__active');
+    } else {
+        footer.classList.remove('_footer__active');
+    }
+    });
+    /*########################*/ 
+
+}
+
+
+
+if (screen.width >= 991){
+    var xt = document.write(social_section())
+}
 
