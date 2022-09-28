@@ -349,6 +349,8 @@ body {
   min-height: 930px;
   padding: 76px 0 49px 0;
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(100vw);
 }
 #section__social .social__wrapp {
   display: flex;
@@ -361,25 +363,6 @@ body {
   height: calc(1rem + 1vw);
   width: 100%;
   margin: 17px;
-  transform: translate(100vw);
-  -webkit-animation: 2s 1 square-animation forwards;
-          animation: 2s 1 square-animation forwards;
-}
-@-webkit-keyframes square-animation {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes square-animation {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 #section__social .social__wrapp .wrapper__item {
   display: flex;
@@ -449,6 +432,10 @@ body {
   background-size: 29%;
 }
 
+#section__social._section__social {
+  transform: translate(0);
+}
+
 #section__services {
   background: url("../img/bgs.png");
   background-repeat: no-repeat;
@@ -456,6 +443,8 @@ body {
   position: relative;
   min-height: 1080px;
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(-100vw);
 }
 #section__services .service__overlay {
   position: absolute;
@@ -482,25 +471,6 @@ body {
   color: #4B0082;
   margin: 0;
   text-align: center;
-  transform: translate(100vw);
-  -webkit-animation: 2s service__title forwards;
-          animation: 2s service__title forwards;
-}
-@-webkit-keyframes service__title {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes service__title {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 #section__services .service__wrapp .service__text {
   font-family: "Baloo 2", sans-serif;
@@ -509,81 +479,62 @@ body {
   text-align: center;
   color: #2E0050;
   line-height: 40px;
-  transform: translate(-100vw);
-  -webkit-animation: 2s service__text forwards;
-          animation: 2s service__text forwards;
   padding: 0 20px;
 }
-@-webkit-keyframes service__text {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes service__text {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-#section__services .swiper-button-next {
+#section__services .service__wrapp .swiper-button-next {
   color: #4B0082 !important;
 }
-#section__services .swiper-button-prev {
+#section__services .service__wrapp .swiper-button-prev {
   color: #4B0082 !important;
 }
-#section__services .swiper-pagination {
+#section__services .service__wrapp .swiper-pagination {
   position: relative !important;
   padding: 20px 0;
   display: none;
 }
-#section__services .swiper-pagination-bullet {
+#section__services .service__wrapp .swiper-pagination-bullet {
   background: var(--main--color);
   padding: 4px 4px;
   opacity: 1;
   border: 1px solid #4B0082;
 }
-#section__services .swiper-pagination-bullet-active {
+#section__services .service__wrapp .swiper-pagination-bullet-active {
   background: #4B0082;
   padding: 4px 84x;
   opacity: 1;
   border: 1px solid #4B0082;
 }
 @media (max-width: 1280px) {
-  #section__services .swiper-pagination {
+  #section__services .service__wrapp .swiper-pagination {
     display: block;
   }
-  #section__services .swiper-button-next {
+  #section__services .service__wrapp .swiper-button-next {
     display: none !important;
   }
-  #section__services .swiper-button-prev {
+  #section__services .service__wrapp .swiper-button-prev {
     display: none !important;
   }
 }
-#section__services .slide__wrapp {
+#section__services .service__wrapp .slide__wrapp {
   max-width: 380px;
   width: 100%;
   min-height: 550px;
 }
-#section__services .wr__item {
+#section__services .service__wrapp .wr__item {
   min-height: 273px;
   padding: 18px 0 0 0;
 }
-#section__services .wr__img {
+#section__services .service__wrapp .wr__img {
   max-width: 380px;
   width: 100%;
 }
-#section__services .wr__img img {
+#section__services .service__wrapp .wr__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#section__services .wr__title {
+#section__services .service__wrapp .wr__title {
   font-family: "Baloo 2", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -591,14 +542,14 @@ body {
   padding: 0 20px;
   margin: 0;
 }
-#section__services .wr__text {
+#section__services .service__wrapp .wr__text {
   font-family: "Baloo 2", sans-serif;
   font-weight: 500;
   font-size: 17px;
   color: #2E0050;
   padding: 0px 20px 10px 20px;
 }
-#section__services .open_modal {
+#section__services .service__wrapp .open_modal {
   background: var(--main--color);
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -610,13 +561,19 @@ body {
   padding: 13px 34px;
   margin: 0 0 0 20px;
 }
-#section__services .open_modal:hover {
+#section__services .service__wrapp .open_modal:hover {
   transition: 0.8s ease;
   box-shadow: initial;
 }
 
+#section__services._action__services {
+  transform: translate(0);
+}
+
 #section__rate {
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(100vw);
 }
 #section__rate .section__title {
   font-family: "Baloo 2", sans-serif;
@@ -624,17 +581,6 @@ body {
   font-size: calc(1rem + 2.3vw);
   color: #FFFFE0;
   text-align: center;
-  transform: translate(100vw);
-  -webkit-animation: 2s section__title forwards;
-          animation: 2s section__title forwards;
-}
-@keyframes section__title {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 #section__rate .wrapper__rate {
   display: flex;
@@ -653,9 +599,6 @@ body {
   align-items: center;
   justify-content: space-around;
   margin: 2px;
-  -webkit-animation: 1s rate__wrapp forwards;
-          animation: 1s rate__wrapp forwards;
-  transform: rotate(180deg);
 }
 #section__rate .wrapper__rate .rate__wrapp .rate__title {
   font-family: "Baloo 2", sans-serif;
@@ -681,22 +624,6 @@ body {
   max-width: 286px;
   width: 100%;
   text-align: center;
-}
-@-webkit-keyframes rate__wrapp {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rate__wrapp {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 #section__rate .wrapper__rate .rate__wrapp:nth-child(1) {
   background: #E9C3FF;
@@ -771,28 +698,15 @@ body {
   box-shadow: initial;
 }
 
+#section__rate._rate__active {
+  transform: translate(0);
+}
+
 #section__edge {
   overflow-x: hidden;
-  transform: translate(100vw);
-  -webkit-animation: 2s section__edge forwards;
-          animation: 2s section__edge forwards;
+  transition: 2s ease;
+  transform: translate(-100vw);
   /* НОВЫЙ СЛАЙДЕР В СЕКЦИИ EDGE */
-}
-@-webkit-keyframes section__edge {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes section__edge {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 #section__edge .edge__title {
   font-family: "Baloo 2", sans-serif;
@@ -894,6 +808,10 @@ body {
   }
 }
 
+#section__edge._edge__active {
+  transform: translate(0);
+}
+
 .section__double {
   background: url("../img/bg2.png");
   background-repeat: no-repeat;
@@ -918,6 +836,8 @@ body {
   z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
+  transition: 2s ease;
+  transform: translate(100vw);
 }
 .section__double #section__comand .comand__title {
   font-family: "Baloo 2", sans-serif;
@@ -926,34 +846,12 @@ body {
   color: #4B0082;
   text-align: center;
   padding: 70px 0;
-  transform: translate(-100vw);
-  -webkit-animation: 2s comand__title forwards;
-          animation: 2s comand__title forwards;
-}
-@-webkit-keyframes comand__title {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes comand__title {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 .section__double #section__comand .comand__wrapp {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 15px;
-  transform: translate(100vw);
-  -webkit-animation: 2s comand__wrapp forwards;
-          animation: 2s comand__wrapp forwards;
 }
 .section__double #section__comand .comand__wrapp .comand__wrapper {
   max-width: 380px;
@@ -990,25 +888,14 @@ body {
   font-size: 17px;
   color: #2E0050;
 }
-@-webkit-keyframes comand__wrapp {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes comand__wrapp {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
+.section__double #section__comand._comand__active {
+  transform: translate(0);
 }
 .section__double #section__work {
   padding: 0 0 48px 0;
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(-100vw);
   /* НОВЫЙ СЛАЙДЕР */
 }
 .section__double #section__work .work__title {
@@ -1021,25 +908,6 @@ body {
   z-index: 2;
   position: relative;
   padding: 70px 0 70px 0;
-  transform: translate(-100vw);
-  -webkit-animation: 2s work__title forwards;
-          animation: 2s work__title forwards;
-}
-@-webkit-keyframes work__title {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes work__title {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 .section__double #section__work .swiper__body {
   max-width: 1607px;
@@ -1152,6 +1020,9 @@ body {
     display: none !important;
   }
 }
+.section__double #section__work._work__active {
+  transform: translate(0);
+}
 
 #section__prev {
   max-width: 1280px;
@@ -1161,14 +1032,13 @@ body {
   min-height: 500px;
   justify-content: space-between;
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(100vw);
 }
 #section__prev .wrapp__prev {
   max-width: 807px;
   width: 100%;
   padding: 10px;
-  transform: translate(-100vw);
-  -webkit-animation: 2s wrapp__prev forwards;
-          animation: 2s wrapp__prev forwards;
 }
 #section__prev .wrapp__prev .title__prev {
   font-family: "Baloo 2", sans-serif;
@@ -1185,22 +1055,6 @@ body {
   color: #FFFFE0;
   margin: 30px 0 50px 0;
 }
-@-webkit-keyframes wrapp__prev {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes wrapp__prev {
-  50% {
-    transform: translate(-100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
 #section__prev .social__slider {
   max-width: 376px;
   overflow: hidden;
@@ -1212,31 +1066,12 @@ body {
   max-width: 376px;
   max-height: 391px;
   padding: 10px;
-  transform: translate(100vw);
-  -webkit-animation: 2s wrapp__social forwards;
-          animation: 2s wrapp__social forwards;
 }
 #section__prev .wrapp__social img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-@-webkit-keyframes wrapp__social {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes wrapp__social {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
 }
 #section__prev .open_modal {
   font-family: "Baloo 2", sans-serif;
@@ -1257,6 +1092,10 @@ body {
 #section__prev .open_modal:hover {
   transition: 0.8s ease;
   box-shadow: initial;
+}
+
+#section__prev._prev__active {
+  transform: translate(0);
 }
 
 #section__next {
@@ -1384,6 +1223,9 @@ body {
   display: flex;
   align-items: center;
   overflow-x: hidden;
+  transition: 2s ease;
+  transform: translate(-100vw);
+  top: 18px;
 }
 #footer .footer__overlay {
   position: absolute;
@@ -1403,9 +1245,6 @@ body {
   justify-content: space-between;
   width: 100%;
   padding: 18px 23px;
-  transform: translate(100vw);
-  -webkit-animation: 2s footer__item forwards;
-          animation: 2s footer__item forwards;
 }
 #footer .footer__item .wrapp__tel {
   position: relative;
@@ -1462,21 +1301,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@-webkit-keyframes footer__item {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
-}
-@keyframes footer__item {
-  50% {
-    transform: translate(100vw);
-  }
-  100% {
-    transform: translate(0vw);
-  }
+
+#footer._footer__active {
+  transform: translate(0);
 }
 
 .slider .slick-track {
@@ -1797,6 +1624,9 @@ body {
   #footer .footer__item .wrapp__icon {
     width: 50px;
     height: 50px;
+  }
+  #section__prev {
+    justify-content: center;
   }
   #section__next {
     padding: 30px 0 0 0;
