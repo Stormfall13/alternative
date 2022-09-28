@@ -18,64 +18,30 @@
     -webkit-animation: none;
             animation: none;
   }
-  #section__social .social__wrapp {
+}
+@media (max-width: 991px) {
+  #section__social {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  #section__services .service__wrapp .service__title {
+  #section__services {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  #section__services .service__wrapp .service__text {
+  #section__rate {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
-  }
-  #section__rate .section__title {
-    transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
-  }
-  #wrapper__rate .rate__wrapp {
-    -webkit-animation: none !important;
-            animation: none !important;
-    transform: rotate(0) !important;
   }
   #section__edge {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  .section__double #section__comand .comand__title {
+  .section__double #section__comand {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  .section__double #section__comand .comand__wrapp {
+  .section__double #section__work {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  .section__double #section__work .work__title {
+  #section__prev {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
-  #section__prev .wrapp__prev {
+  #footer {
     transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
-  }
-  #section__prev .wrapp__social {
-    transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
-  }
-  #footer .footer__item {
-    transform: translate(0);
-    -webkit-animation: none;
-            animation: none;
   }
 }/*# sourceMappingURL=item.css.map */
