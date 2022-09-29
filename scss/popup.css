@@ -120,11 +120,6 @@
   display: block;
 }
 
-.body_block {
-  overflow: hidden;
-  margin-right: 17px;
-}
-
 #close_modal {
   width: 23px;
   height: 26px;
