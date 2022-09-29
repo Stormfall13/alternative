@@ -208,8 +208,6 @@ function social_section(){
 
     if (window.scrollY > 100) {
         element.classList.add('_section__social');
-    } else {
-        element.classList.remove('_section__social');
     }
     });
     /*#######################*/
@@ -222,8 +220,6 @@ function social_section(){
 
     if (window.scrollY > 1400) {
         services.classList.add('_action__services');
-    } else {
-        services.classList.remove('_action__services');
     }
     });
     /*########################*/
@@ -236,8 +232,6 @@ function social_section(){
 
     if (window.scrollY > 2400) {
         rate.classList.add('_rate__active');
-    } else {
-        rate.classList.remove('_rate__active');
     }
     });
     /*########################*/
@@ -249,8 +243,6 @@ function social_section(){
 
     if (window.scrollY > 2600) {
         edge.classList.add('_edge__active');
-    } else {
-        edge.classList.remove('_edge__active');
     }
     });
     /*########################*/
@@ -262,8 +254,6 @@ function social_section(){
 
     if (window.scrollY > 3600) {
         comand.classList.add('_comand__active');
-    } else {
-        comand.classList.remove('_comand__active');
     }
     });
     /*########################*/
@@ -275,8 +265,6 @@ function social_section(){
 
     if (window.scrollY > 5400) {
         work.classList.add('_work__active');
-    } else {
-        work.classList.remove('_work__active');
     }
     });
     /*########################*/ 
@@ -288,8 +276,6 @@ function social_section(){
 
     if (window.scrollY > 6000) {
         prev.classList.add('_prev__active');
-    } else {
-        prev.classList.remove('_prev__active');
     }
     });
     /*########################*/ 
@@ -303,8 +289,6 @@ function social_section(){
 
     if (window.scrollY > 7000) {
         footer.classList.add('_footer__active');
-    } else {
-        footer.classList.remove('_footer__active');
     }
     });
     /*########################*/ 
